@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="https://github.com/gmb77/pub/blob/master/untitled/familytree.css" ?>
+<!--?xml-stylesheet type="text/xsl" href="https://github.com/gmb77/pub/blob/master/untitled/familytree.xsl" ?-->
+<!-- Created by HP -->
+<!DOCTYPE familytree SYSTEM "https://github.com/gmb77/pub/blob/master/untitled/familytree.dtd" [
+        <!ATTLIST familytree xmlns CDATA #REQUIRED
+                         xmlns:xsi CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED>]>
+<familytree xmlns="https://github.com/gmb77/familytree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://github.com/gmb77/familytree https://github.com/gmb77/pub/blob/master/untitled/familytree.dtd">
+    <members>
+        <member id="id1" sex="male" parents="id4 id5" siblings="id2 id3">
+            <name>
+                <firstname>firstname1</firstname>
+                <surname>surname1</surname>
+            </name>
+            <birthdate>1950-01-01</birthdate>
+        </member>
+        <member id="id2" sex="male" parents="id4 id5" siblings="id1 id3">
+            <name>
+                <firstname>firstname2</firstname>
+                <surname>surname2</surname>
+            </name>
+            <birthdate>1950-01-02</birthdate>
+        </member>
+        <member id="id3" sex="male" parents="id4 id5" siblings="id1 id2">
+            <name>
+                <firstname>firstname3</firstname>
+                <surname>surname3</surname>
+            </name>
+            <birthdate>1950-01-03</birthdate>
+        </member>
+        <member id="id4" sex="female">
+            <name>
+                <firstname>firstname4</firstname>
+                <surname>surname4</surname>
+            </name>
+            <birthdate>1950-01-04</birthdate>
+        </member>
+        <member id="id5" sex="male">
+            <name>
+                <firstname>firstname5</firstname>
+                <surname>surname5</surname>
+            </name>
+            <birthdate>1950-01-05</birthdate>
+        </member>
+    </members>
+</familytree>

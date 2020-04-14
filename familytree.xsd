@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://github.com/gmb77/familytree"
+           xmlns="https://github.com/gmb77/familytree" elementFormDefault="qualified">
+    <xs:element name="familytree">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="members"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="members">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="member" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="member">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="birthdate"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="attribs"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="name">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="firstname"/>
+                <xs:element ref="surname"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:attributeGroup name="attribs">
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute name="sex" type="sex" use="required"/>
+        <xs:attribute name="parents" type="xs:IDREFS"/>
+        <xs:attribute name="siblings" type="xs:IDREFS"/>
+    </xs:attributeGroup>
+    <xs:simpleType name="sex">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="male"/>
+            <xs:enumeration value="female"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="firstname" type="xs:string"/>
+    <xs:element name="surname" type="xs:string"/>
+    <xs:element name="birthdate" type="xs:date"/>
+</xs:schema>

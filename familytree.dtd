@@ -1,0 +1,12 @@
+<!-- Created by HP -->
+        <!ELEMENT familytree (members)>
+        <!ELEMENT members (member*)>
+        <!ELEMENT member (name,birthdate)>
+        <!ELEMENT name (firstname,surname)>
+        <!ELEMENT firstname (#PCDATA)>
+        <!ELEMENT surname (#PCDATA)>
+        <!ELEMENT birthdate (#PCDATA)>
+        <!ATTLIST member id ID #REQUIRED
+                sex (male|female) #REQUIRED
+                parents IDREFS #IMPLIED
+                siblings IDREFS #IMPLIED>
