@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/gmb77/familytree/blob/master/untitled/familytree.css" ?>
-<!--?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/gmb77/familytree/blob/master/untitled/familytree.xsl" ?-->
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/gmb77/familytree/master/familytree.css" ?>
+<!--?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/gmb77/familytree/master/familytree.xsl" ?-->
 <!-- Created by HP -->
-<!DOCTYPE familytree SYSTEM "https://raw.githubusercontent.com/gmb77/familytree/blob/master/untitled/familytree.dtd" [
+<!DOCTYPE familytree SYSTEM "https://raw.githubusercontent.com/gmb77/familytree/master/familytree.dtd" [
         <!ATTLIST familytree xmlns CDATA #REQUIRED
                 xmlns:xsi CDATA #REQUIRED
                 xsi:schemaLocation CDATA #REQUIRED>]>
 <familytree xmlns="https://github.com/gmb77/familytree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="https://github.com/gmb77/familytree https://raw.githubusercontent.com/gmb77/familytree/blob/master/untitled/familytree.dtd">
+            xsi:schemaLocation="https://github.com/gmb77/familytree https://raw.githubusercontent.com/gmb77/familytree/master/familytree.dtd">
     <members>
         <member id="id1" sex="male" parents="id4 id5" siblings="id2 id3">
             <name>
